@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida</title>
+
+<style>
+*,*::after,*::before { box-sizing: border-box;}
+
+body { font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+/* div pai*/
+.exemplo-eme { font-size: 20px;
+
+        /* div filhos */
+        h2 {font-size: 2em; }
+        p { font-size: 1em; }
+    }
+
+
+/* Elemento raíz (html) */
+
+html { font-size: 16px; } /* Medida Padrão */
+
+h1 {font-size: 3rem;} /*  16x 3 = 48 px*/
+
+h2 { font-size: 2rem;} /*  16x 2 = 32 px*/
+
+h3 { font-size: 1.5rem;} /*  16x 1.5 = 24 px*/
+
+p { font-size: 1rem;} /*  16x 1 = 16 px*/
+
+code { 
+    background-color: yellow;
+    padding: 0.5rem; /* 8px */
+    border: solid 0.25rem red; /* 4px */
+}
+
+/* reset css */
+body, h1, h2 {margin: 0;
+             padding: 0;
+}
+
+
+header {
+    background-color: orange;
+    height: 30vh;
+}
+
+main { background-color: lightblue;
+        min-height: 70vh;
+        width: 80vw;
+        margin: auto;
+}
+
+</style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+    <h1> Unidades de medida úteis para Design Responsivo</h1></header>
+
+ <main>
+    <!-- Unidades já conhecidas/usadas px (pixel) -> unidade absoluta, fixa, previsível
+     % (porcentagem) -> unidade relativa, variavel -->
+
+    <h2>REM (Root-EME)</h2>
+    <p>A Medida de R-EME (rem) é relativa ao <code>font-size</code> do elemento <b>raiz html</b></p>
+
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore reiciendis est soluta rerum. Porro, quisquam!
+    </p>
+
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+
+    <h2>EME</h2>
+    <p><i>Obs.: Cada vez menos usada</i></p>
+
+    <p>A medida EME (em) é relativa ao <code>font-size</code>do elemento <b>pai</b>.</p>
+
+    <div class="exemplo-eme">
+        <h2>Este é o H2 dentro da Div</h2>
+        <p>Este é o p dentro da div</p>
+    </div>
+
+    <h2>VW e VH</h2>
+    <p>As medidas VW (Viewport width) e VH (Viewport Height) são relativas à área de visualização do navegador (chamada de viewport).</p>
+    <p>VW diz respeito à largura e VH diz respeito à altura. </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas culpa praesentium ipsum aperiam modi vel quasi unde deserunt quia odio fugiat sint vero officia reiciendis, excepturi illum error non cumque.</p>
+    <p>Minima aperiam unde ratione nisi est rem assumenda hic, alias consequatur eius nostrum beatae voluptatibus rerum optio iste ex, quia molestias sapiente ullam reiciendis. Mollitia laborum odit repudiandae doloremque doloribus?</p>
+    <p>Iste, hic modi. Ad officiis quae fugiat, quia ex autem reiciendis asperiores sunt consequatur libero velit suscipit impedit rem explicabo incidunt illum esse eveniet animi aspernatur quasi numquam accusamus. Magni!</p>
+    <p>Maxime fugiat officia optio nisi facilis quae repudiandae architecto nulla alias deleniti. Tenetur dolore nemo ratione magni reprehenderit odio sit aliquid. Nobis exercitationem, porro ratione aliquid laboriosam vitae repudiandae earum?</p>
+    <p>Vero delectus ab laboriosam quos. Quam et reprehenderit libero cupiditate inventore consectetur deleniti quis dolores sunt molestias repudiandae corrupti ab autem laboriosam, explicabo voluptate ipsam adipisci iste aliquid est voluptatibus!</p>
+    <p>Sunt modi neque tempore, repudiandae quaerat dolor, veritatis officiis assumenda dicta vel sint, molestiae sit quasi ab consequatur. Ipsam vel error quam optio eligendi aspernatur nihil repellendus et dolores dicta?</p>
+    <p>Voluptatem minima ipsa repudiandae, sint molestias asperiores optio reiciendis explicabo vero est eligendi quibusdam quidem at non aliquam vel voluptates sapiente impedit voluptas soluta unde! Commodi nam accusamus illum modi.</p>
+    <p>Commodi placeat totam labore neque minima saepe optio ab, assumenda quaerat provident omnis esse quas explicabo aliquam veniam perspiciatis fuga, a ipsum officia praesentium numquam quia expedita autem est! Molestiae!</p>
+    <p>Odio esse nostrum totam, quos explicabo eum consectetur iste doloribus suscipit tempora similique, maiores rerum aliquid sapiente quo ratione nobis nemo ipsam? Maiores dicta ipsa sit aspernatur libero consequatur rem!</p>
+    <p>Fuga aperiam necessitatibus ipsa nulla excepturi nihil asperiores blanditiis et iusto impedit beatae tenetur, harum neque commodi laudantium cumque pariatur incidunt minima. Obcaecati quod sint eum tenetur officia velit fuga?</p>
+
+
+
+
+</main>
+
+</body>
+
+</html>
