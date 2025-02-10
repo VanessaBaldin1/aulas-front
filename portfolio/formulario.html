@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <h1>Trabalhando com tags/atributos para formulários</h1>
+    <hr>
+
+    <!-- as informações não ficam expostas, só funciona com programação -->
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="nome">Nome completo:</label>
+            <input required type="text" name="nome" id="nome">
+        </p>
+
+        <p>
+            <label for="email">Endereço de e-mail:</label>
+            <input required type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+        </p>
+
+        <div>
+            <!-- Atenção: neste caso, é necessário usar o MESMO atributo "name" em todas as opções.-->
+            <p>Deseja receber informativos?</p>
+
+            <input type="radio" name="informativos" id="Sim" value="Sim">
+            <label for="Sim">Sim</label>
+
+            <input type="radio" name="informativos" id="Não" value="Não">
+            <label for="Não">Não</label>
+        </div>
+
+        <div>
+            <p>Escolher as tecnologias de sua preferência:</p>
+
+            <input type="checkbox" name="interesses" id="HTML" value="html">
+            <label for="HTML">HTML</label>
+
+            <input type="checkbox" name="interesses" id="CSS" value="CSS">
+            <label for="CSS">CSS</label>
+
+            <input type="checkbox" name="interesses" id="JS" value="JS">
+            <label for="JS">JS</label>
+
+        </div>
+
+
+        <p>
+            <label for="">Idade:</label>
+            <input min="14" max="120" type="number" name="idade" id="idade">
+        </p>
+
+        <p>
+            <label for="nascimento">Data de nascimento</label>
+            <input min="2020-01-01" max="2024-08-20" type="date" name="data" id="data">
+        </p>
+
+        <!-- Opções para escolher - lista suspensa -->
+        <p>
+            <label for="assunto">Assunto</label>
+            <select name="assunto" id="assunto">
+                <!-- Deixe sempre o primeiro option vazio -->
+                <option value="1"></option>
+                <option value="2">Reclamações</option>
+                <option value="3">Elogios</option>
+                <option value="4">Outros</option>
+            </select>
+        </p>
+
+        <p>
+            <!-- ATENÇÂO texarea não pode ter espaço entre o fechamento. -->
+            <label for="mensagem">Mensagem</label> <br>
+            <textarea  required minlength="5"  maxlength="50" name="mensagem" id="mensagem" cols="30" rows="5"></textarea>
+        </p>
+
+        <button type="submit">Enviar Dados</button>
+
+
+    </form>
+
+</body>
+
+</html>
